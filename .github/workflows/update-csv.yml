@@ -1,8 +1,8 @@
-name: Update USDA CSV
+name: Update USDA Case CSV
 
 on:
   schedule:
-    - cron: '0 12 * * *'   # every day at 12:00 UTC
+    - cron: '15 12 * * *'   # daily at 12:15 UTC
   workflow_dispatch:
 
 jobs:
@@ -21,8 +21,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
 
-      - name: Run update script
+      - name: Regenerate CSV
         run: |
           python scripts/update_cases.py
 
