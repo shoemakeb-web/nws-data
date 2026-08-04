@@ -33,7 +33,7 @@ Animal ID,Animal Type,Case Type,Confirmed Date,County,Species,State,Status,Min. 
 "Texas, CROCKETT, SU:21326:26, SS:9227:26",Domestic,Domestic,7/7/2026,Crockett,Cattle,Texas,Inactive,7/7/2026,
 "Texas, BREWSTER, SU:21452:26, SS:9230:26",Domestic,Domestic,7/9/2026,Brewster,Cattle,Texas,Inactive,7/9/2026,
 "Texas, CROCKETT, SU:21603:26, SS:9241:26",Domestic,Domestic,7/10/2026,Crockett,Goats,Texas,Inactive,7/10/2026,
-"Texas, BREWSTER, SU:21744:26, SS:9261:26",Domestic,Domestic,7/13/2026,Brewster,Cattle,Texas,Active,7/13/2026,
+"Texas, BREWSTER, SU:21744:26, SS:9261:26",Domestic,Domestic,7/13/2026,Brewster,Cattle,Texas,Inactive,7/13/2026,
 "Texas, SUTTON, SU:21758:26, SS:9264:26",Domestic,Domestic,7/13/2026,Sutton,Dog,Texas,Active,7/13/2026,
 "Texas, PECOS, SU:21829:26, SS:9274:26",Domestic,Domestic,7/14/2026,Pecos,Sheep,Texas,Active,7/14/2026,
 "Texas, PECOS, SU:21830:26, SS:9275:26",Domestic,Domestic,7/14/2026,Pecos,Sheep,Texas,Active,7/14/2026,
