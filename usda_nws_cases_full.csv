@@ -37,7 +37,7 @@ Animal ID,Animal Type,Case Type,Confirmed Date,County,Species,State,Status,Min. 
 "Texas, SUTTON, SU:21758:26, SS:9264:26",Domestic,Domestic,7/13/2026,Sutton,Dog,Texas,Inactive,7/13/2026,
 "Texas, PECOS, SU:21829:26, SS:9274:26",Domestic,Domestic,7/14/2026,Pecos,Sheep,Texas,Inactive,7/14/2026,
 "Texas, PECOS, SU:21830:26, SS:9275:26",Domestic,Domestic,7/14/2026,Pecos,Sheep,Texas,Inactive,7/14/2026,
-"Texas, STARR, SU:22268:26, SS:9457:26",Domestic,Domestic,7/17/2026,Starr,Cattle,Texas,Active,7/17/2026,
+"Texas, STARR, SU:22268:26, SS:9457:26",Domestic,Domestic,7/17/2026,Starr,Cattle,Texas,Inactive,7/17/2026,
 "Texas, SCHLEICHER, SU:22303:26, SS:9539:26",Domestic,Domestic,7/18/2026,Schleicher,Sheep,Texas,Inactive,7/18/2026,
 "Texas, SUTTON, SU:22420:26, SS:9575:26",Domestic,Domestic,7/21/2026,Sutton,Goats,Texas,Active,7/21/2026,
 "Texas, BREWSTER, SU:23081:26, SS:9989:26",Domestic,Domestic,7/29/2026,Brewster,Cattle,Texas,Active,7/29/2026,
