@@ -46,3 +46,4 @@ Animal ID,Animal Type,Case Type,Confirmed Date,County,Species,State,Status,Min. 
 "Texas, TERRELL, SU:23551:26, SS:10357:26",Domestic,Domestic,8/5/2026,Terrell,Sheep,Texas,Inactive,8/5/2026,
 "Texas, VAL VERDE, SU:24447:26, SS:11131:26",Domestic,Domestic,8/16/2026,Val Verde,Sheep,Texas,Active,8/16/2026,
 "Texas, VAL VERDE, SU:25061:26, SS:12009:26",Domestic,Domestic,8/25/2026,Val Verde,Goats,Texas,Active,8/25/2026,
+"Texas, CROCKETT, SU:25551:26, SS:12162:26",Domestic,Domestic,8/31/2026,Crockett,Dog,Texas,Active,8/31/2026,
