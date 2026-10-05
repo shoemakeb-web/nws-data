@@ -2,39 +2,53 @@ name: Update USDA Case CSV
 
 on:
   schedule:
-    - cron: '15 12 * * *'   # daily at 12:15 UTC
+    - cron: '35 23 * * *'  # Primary: 23:35 UTC, after the requested 23:30 UTC threshold
+    - cron: '35 0,2 * * *' # Recovery checks: 00:35 and 02:35 UTC
   workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: usda-case-csv-update
+  cancel-in-progress: false
 
 jobs:
   update-csv:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 15
     steps:
       - name: Checkout repo
         uses: actions/checkout@v5
-
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: '3.11'
-
-      - name: Install dependencies
+      - name: Test updater
+        run: python -m unittest discover -s tests -v
+      - name: Regenerate validated CSV and status
+        id: update
+        continue-on-error: true
+        env:
+          RECOVERY_ONLY: ${{ github.event_name == 'schedule' && github.event.schedule != '35 23 * * *' }}
         run: |
-          python -m pip install --upgrade pip
-          pip install requests beautifulsoup4
-
-      - name: Regenerate CSV
-        run: |
-          python scripts/update_cases.py
-
-      - name: Commit changes
+          if [ "$RECOVERY_ONLY" = "true" ]; then
+            python scripts/update_cases.py --recovery-only
+          else
+            python scripts/update_cases.py
+          fi
+      - name: Commit and push CSV and status
+        if: always() && steps.update.outcome != 'skipped'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add usda_nws_cases_full.csv
-          git diff --cached --quiet || git commit -m "Auto-update USDA case CSV"
-
-      - name: Push changes
-        if: success()
+          git add usda_nws_cases_full.csv usda_nws_cases_status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update USDA case CSV fetch status"
+            git push
+          fi
+      - name: Report failed update
+        if: steps.update.outcome == 'failure'
         run: |
-          git push
+          echo 'USDA update failed. Last good CSV retained; failure status published. Recovery checks will retry.' >&2
+          exit 1
