@@ -52,3 +52,4 @@ Animal ID,Animal Type,Case Type,Confirmed Date,County,Species,State,Status,Min. 
 "Texas, BREWSTER, SU:27322:26, SS:12495:26",Fly Trap,Fly Trap,9/25/2026,Brewster,Fly,Texas,Inactive,9/25/2026,
 "Texas, CROCKETT, SU:27400:26, SS:12498:26",Domestic,Domestic,9/26/2026,Crockett,Goats,Texas,Active,9/26/2026,
 "Texas, BREWSTER, SU:27499:27, SS:12540:27",Domestic,Domestic,10/2/2026,Brewster,Dog,Texas,Active,10/2/2026,
+"Texas, PECOS, SU:27720:27, SS:12580:27",Domestic,Domestic,10/10/2026,Pecos,Cattle,Texas,Active,10/10/2026,
