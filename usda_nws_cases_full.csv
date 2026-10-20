@@ -55,3 +55,4 @@ Animal ID,Animal Type,Case Type,Confirmed Date,County,Species,State,Status,Min. 
 "Texas, PECOS, SU:27720:27, SS:12580:27",Domestic,Domestic,10/10/2026,Pecos,Cattle,Texas,Active,10/10/2026,
 "New Mexico, GRANT, SU:27871:27, SS:12613:27",Domestic,Domestic,10/15/2026,Grant,Cattle,New Mexico,Active,10/15/2026,
 "New Mexico, GRANT, SU:27870:27, SS:12612:27",Domestic,Domestic,10/15/2026,Grant,Horse,New Mexico,Active,10/15/2026,
+"Texas, BREWSTER, SU:27904:27, SS:12636:27",Domestic,Domestic,10/18/2026,Brewster,Horse,Texas,Active,10/18/2026,
