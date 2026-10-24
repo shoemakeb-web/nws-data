@@ -58,4 +58,6 @@ Animal ID,Animal Type,Case Type,Confirmed Date,County,Species,State,Status,Min. 
 "Texas, BREWSTER, SU:27904:27, SS:12636:27",Domestic,Domestic,10/18/2026,Brewster,Horse,Texas,Active,10/18/2026,
 "Texas, JEFF DAVIS, SU:28000:27, SS:12651:27",Domestic,Domestic,10/20/2026,Jeff Davis,Cattle,Texas,Active,10/20/2026,
 "New Mexico, OTERO, SU:28022:27, SS:12653:27",Domestic,Domestic,10/21/2026,Otero,Cattle,New Mexico,Active,10/21/2026,
+"Texas, VAL VERDE, SU:28048:27, SS:12656:27",Domestic,Domestic,10/21/2026,Val Verde,Cattle,Texas,Active,10/21/2026,
 "Texas, PECOS, SU:28069:27, SS:12654:27",Wildlife,Wildlife & Feral,10/21/2026,Pecos,Elk,Texas,Inactive,10/21/2026,
+"New Mexico, HIDALGO, SU:28074:27, SS:12660:27",Domestic,Domestic,10/22/2026,Hidalgo,Cattle,New Mexico,Active,10/22/2026,
