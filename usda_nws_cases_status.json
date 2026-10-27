@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ok": false,
   "source_url": "https://publicdashboards.dl.usda.gov/t/MRP_PUB/views/NewWorldScrewwormPublicReporting_17805168329840/ExportToCSV.csv",
-  "last_attempt_utc": "2026-10-27T02:21:43.613937Z",
+  "last_attempt_utc": "2026-10-27T05:24:35.765731Z",
   "last_successful_fetch_utc": "2026-10-26T01:33:09.015298Z",
   "row_count": 66,
   "latest_case_date": "2026-10-24",
