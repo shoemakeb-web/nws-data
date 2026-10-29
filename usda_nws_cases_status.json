@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "ok": false,
+  "ok": true,
   "source_url": "https://publicdashboards.dl.usda.gov/t/MRP_PUB/views/NewWorldScrewwormPublicReporting_17805168329840/ExportToCSV.csv",
-  "last_attempt_utc": "2026-10-28T06:04:57.220754Z",
-  "last_successful_fetch_utc": "2026-10-26T01:33:09.015298Z",
-  "row_count": 66,
-  "latest_case_date": "2026-10-24",
-  "csv_sha256": "71fb4ab90339b06dec5a5fa806cb2f8b5bdf5cc64990f0926470b9be06eecfbd",
+  "last_attempt_utc": "2026-10-29T02:43:32.074143Z",
+  "last_successful_fetch_utc": "2026-10-29T02:43:32.074143Z",
+  "row_count": 72,
+  "latest_case_date": "2026-10-28",
+  "csv_sha256": "5c5faa58aefe1d600b59dfbcf8e0a5c7a2b40697f56833ec6dcb3659e28ef4f3",
   "source_publication_time_verified": false,
-  "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+  "error": null
 }
