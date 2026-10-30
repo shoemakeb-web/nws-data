@@ -71,3 +71,6 @@ Animal ID,Animal Type,Case Type,Confirmed Date,County,Species,State,Status,Min. 
 "Arizona, COCHISE, SU:28258:27, SS:12741:27",Domestic,Domestic,10/28/2026,Cochise,Dog,Arizona,Active,10/28/2026,
 "New Mexico, DONA ANA, SU:28277:27, SS:12742:27",Domestic,Domestic,10/28/2026,Dona Ana,Dog,New Mexico,Active,10/28/2026,
 "New Mexico, GRANT, SU:28278:27, SS:12743:27",Domestic,Domestic,10/28/2026,Grant,Domestic Cat,New Mexico,Active,10/28/2026,
+"Texas, PRESIDIO, SU:28275:27, SS:12744:27",Domestic,Domestic,10/28/2026,Presidio,Cattle,Texas,Active,10/28/2026,
+"New Mexico, DONA ANA, SU:28285:27, SS:12752:27",Domestic,Domestic,10/29/2026,Dona Ana,Cattle,New Mexico,Active,10/29/2026,
+"New Mexico, LUNA, SU:28286:27, SS:12753:27",Domestic,Domestic,10/29/2026,Luna,Cattle,New Mexico,Active,10/29/2026,
