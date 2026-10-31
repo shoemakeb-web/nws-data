@@ -74,3 +74,5 @@ Animal ID,Animal Type,Case Type,Confirmed Date,County,Species,State,Status,Min. 
 "Texas, PRESIDIO, SU:28275:27, SS:12744:27",Domestic,Domestic,10/28/2026,Presidio,Cattle,Texas,Active,10/28/2026,
 "New Mexico, DONA ANA, SU:28285:27, SS:12752:27",Domestic,Domestic,10/29/2026,Dona Ana,Cattle,New Mexico,Active,10/29/2026,
 "New Mexico, LUNA, SU:28286:27, SS:12753:27",Domestic,Domestic,10/29/2026,Luna,Cattle,New Mexico,Active,10/29/2026,
+"New Mexico, DONA ANA, SU:28266:27, SS:12757:27",Fly Trap,Fly Trap,10/29/2026,Dona Ana,Fly,New Mexico,Inactive,10/29/2026,
+"New Mexico, DONA ANA, SU:28348:27, SS:12774:27",Domestic,Domestic,10/30/2026,Dona Ana,Dog,New Mexico,Active,10/30/2026,
