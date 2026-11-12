@@ -19,6 +19,17 @@ SOURCE_URL = "https://publicdashboards.dl.usda.gov/t/MRP_PUB/views/NewWorldScrew
 OUTPUT_FILE = Path("usda_nws_cases_full.csv")
 STATUS_FILE = Path("usda_nws_cases_status.json")
 REQUIRED = {"Animal ID", "Confirmed Date", "County", "State", "Status"}
+# Verified against the USDA export on 2026-11-12. This is deliberately an
+# exact, one-way correction, not a general rule to ignore the county in IDs.
+CASE_ID_CORRECTIONS = {
+    "Texas, BREWSTER, SU:28426:27, SS:12802:27": {
+        "replacement": "Texas, JEFF DAVIS, SU:28426:27, SS:12802:27",
+        "old_county": "Brewster",
+        "new_county": "Jeff Davis",
+        "context": {"State": "Texas", "Animal Type": "Domestic",
+                    "Case Type": "Domestic", "Species": "Cattle"},
+    },
+}
 
 
 def normalize_header(value):
@@ -38,6 +49,38 @@ def parse_date(value):
         except ValueError:
             pass
     raise ValueError("Invalid confirmed date: " + str(value))
+
+
+def validate_case_continuity(records, previous_text):
+    current = {record["Animal ID"].strip(): record for record in records}
+    prior = {}
+    if previous_text:
+        reader = csv.DictReader(StringIO(previous_text.lstrip("\ufeff")))
+        for record in reader:
+            identity = (record.get("Animal ID") or "").strip()
+            if identity:
+                if identity in prior:
+                    raise ValueError("Duplicate Animal ID in previous CSV")
+                prior[identity] = record
+    missing = set(prior) - set(current)
+    for old_id, correction in CASE_ID_CORRECTIONS.items():
+        new_id = correction["replacement"]
+        # Both spellings would count the same USDA case twice. A prior target
+        # also cannot stand in for a different missing row.
+        if any(old_id in archive and new_id in archive for archive in (current, prior)):
+            raise ValueError("Ambiguous corrected case IDs; manual review required")
+        if old_id not in missing or new_id not in current:
+            continue
+        old, new = prior[old_id], current[new_id]
+        if (old.get("County", "").strip() != correction["old_county"]
+                or new.get("County", "").strip() != correction["new_county"]
+                or any(old.get(field, "").strip() != expected
+                       or new.get(field, "").strip() != expected
+                       for field, expected in correction["context"].items())):
+            raise ValueError("Corrected case context does not match; manual review required")
+        missing.remove(old_id)
+    if missing:
+        raise ValueError("Source omitted existing case IDs; last good CSV retained")
 
 
 def validate_csv(text, previous_text=None):
@@ -68,12 +111,9 @@ def validate_csv(text, previous_text=None):
         records.append(record)
     if not records:
         raise ValueError("Source returned zero case records; manual review required")
-    if previous_text:
-        # The full-case archive must not silently lose existing records.
-        prior_reader = csv.DictReader(StringIO(previous_text.lstrip("\ufeff")))
-        prior_ids = {r["Animal ID"].strip() for r in prior_reader if r.get("Animal ID")}
-        if not prior_ids.issubset(ids):
-            raise ValueError("Source omitted existing case IDs; last good CSV retained")
+    # The full-case archive must not silently lose existing records. Only the
+    # explicitly verified identity correction above can replace a missing ID.
+    validate_case_continuity(records, previous_text)
     output = StringIO(newline="")
     writer = csv.DictWriter(output, fieldnames=headers, lineterminator="\n")
     writer.writeheader()
@@ -164,3 +204,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
