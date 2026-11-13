@@ -133,3 +133,5 @@ Animal ID,Animal Type,Case Type,Confirmed Date,County,Species,State,Status,Min. 
 "Texas, VAL VERDE, SU:28623:27, SS:12879:27",Domestic,Domestic,11/9/2026,Val Verde,Sheep,Texas,Active,11/9/2026,
 "Arizona, COCHISE, SU:28654:27, SS:12885:27",Domestic,Domestic,11/10/2026,Cochise,Horse,Arizona,Active,11/10/2026,
 "New Mexico, OTERO, SU:28736:27, SS:12890:27",Domestic,Domestic,11/11/2026,Otero,Horse,New Mexico,Active,11/11/2026,
+"Texas, TERRELL, SU:28732:27, SS:12892:27",Domestic,Domestic,11/11/2026,Terrell,Cattle,Texas,Active,11/11/2026,
+"Texas, VAL VERDE, SU:28735:27, SS:12893:27",Domestic,Domestic,11/11/2026,Val Verde,Cattle,Texas,Active,11/11/2026,
