@@ -2,11 +2,11 @@
   "schema_version": 1,
   "ok": true,
   "source_url": "https://publicdashboards.dl.usda.gov/t/MRP_PUB/views/NewWorldScrewwormPublicReporting_17805168329840/ExportToCSV.csv",
-  "last_attempt_utc": "2026-11-16T02:58:22.395252Z",
-  "last_successful_fetch_utc": "2026-11-16T02:58:22.395252Z",
-  "row_count": 146,
-  "latest_case_date": "2026-11-13",
-  "csv_sha256": "78879ed8fcfda03db63a49d011622842a3f1f7e3ee5a0257e290a658cb75dedd",
+  "last_attempt_utc": "2026-11-17T05:12:20.697331Z",
+  "last_successful_fetch_utc": "2026-11-17T05:12:20.697331Z",
+  "row_count": 149,
+  "latest_case_date": "2026-11-16",
+  "csv_sha256": "920bf6cda20aa44fc4f971081d77fb4c00df3f6dd7db46c15e6c1410b65861d5",
   "source_publication_time_verified": false,
   "error": null
 }
