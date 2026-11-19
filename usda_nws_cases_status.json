@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "ok": true,
+  "ok": false,
   "source_url": "https://publicdashboards.dl.usda.gov/t/MRP_PUB/views/NewWorldScrewwormPublicReporting_17805168329840/ExportToCSV.csv",
-  "last_attempt_utc": "2026-11-18T04:39:39.356546Z",
+  "last_attempt_utc": "2026-11-19T04:25:45.975996Z",
   "last_successful_fetch_utc": "2026-11-18T04:39:39.356546Z",
   "row_count": 149,
   "latest_case_date": "2026-11-16",
   "csv_sha256": "77f775add8ae4651bf7c1a56a9eee1c3940d00a8dbdb4397395ad711fc9a3006",
   "source_publication_time_verified": false,
-  "error": null
+  "error": "Missing or duplicate required CSV headers"
 }
