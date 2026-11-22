@@ -156,4 +156,6 @@ Animal ID,Animal Type,Case Type,Confirmed Date,County,Species,State,Status,Min. 
 "Arizona, GREENLEE, SU:29094:27, SS:12985:27",Domestic,Domestic,11/19/2026,Greenlee,Sheep,Arizona,Active,11/19/2026,
 "Texas, JIM HOGG, SU:29082:27, SS:12971:27",Domestic,Domestic,11/19/2026,Jim Hogg,Cattle,Texas,Active,11/19/2026,
 "New Mexico, OTERO, SU:29153:27, SS:12970:27",Domestic,Domestic,11/19/2026,Otero,Cattle,New Mexico,Active,11/19/2026,
+"Texas, PRESIDIO, SU:29083:27, SS:12990:27",Domestic,Domestic,11/19/2026,Presidio,Dog,Texas,Active,11/19/2026,
 "Texas, STARR, SU:29148:27, SS:12986:27",Domestic,Domestic,11/19/2026,Starr,Cattle,Texas,Active,11/19/2026,
+"Texas, DUVAL, SU:29195:27, SS:12991:27",Domestic,Domestic,11/20/2026,Duval,Cattle,Texas,Active,11/20/2026,
