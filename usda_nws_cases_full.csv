@@ -159,3 +159,7 @@ Animal ID,Animal Type,Case Type,Confirmed Date,County,Species,State,Status,Min. 
 "Texas, PRESIDIO, SU:29083:27, SS:12990:27",Domestic,Domestic,11/19/2026,Presidio,Dog,Texas,Active,11/19/2026,
 "Texas, STARR, SU:29148:27, SS:12986:27",Domestic,Domestic,11/19/2026,Starr,Cattle,Texas,Active,11/19/2026,
 "Texas, DUVAL, SU:29195:27, SS:12991:27",Domestic,Domestic,11/20/2026,Duval,Cattle,Texas,Active,11/20/2026,
+"Texas, MIDLAND, SU:29182:27, SS:12995:27",Domestic,Domestic,11/20/2026,Midland,Dog,Texas,Active,11/20/2026,
+"Texas, STARR, SU:29213:27, SS:12996:27",Domestic,Domestic,11/20/2026,Starr,Cattle,Texas,Active,11/20/2026,
+"Texas, STARR, SU:29215:27, SS:12997:27",Domestic,Domestic,11/20/2026,Starr,Cattle,Texas,Active,11/20/2026,
+"Texas, WEBB, SU:29214:27, SS:12998:27",Domestic,Domestic,11/20/2026,Webb,Cattle,Texas,Active,11/20/2026,
